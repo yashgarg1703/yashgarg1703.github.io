@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/919e7dd8ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Student.css">
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <button id="scrollToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <img id="logo" class="img-responsive" src="jss_logo.jpg" />
+        <h1 class="text-info">STUDENT PORTFOLIO</h1>
+        <div id="success" class="alert alert-success alert-dismissible fade show success" role="alert">
+            <strong>Success!!</strong> Your Data Has Successfully Been Submitted.
+        </div>
+        <div id="warning" class="alert alert-warning alert-dismissible fade show warning" role="alert">
+            <strong>Warning!!</strong> Complete all the required fields.
+        </div>
+        <form id="form" class="form-signin text-danger" action="index.html" method="post">
+
+            <label>First_Name </label>
+            <input class="form-control" id="field1" type="text" placeholder="FIRST NAME" name="l_name" autofocus>
+            <div id="fname" class="alert alert-danger invalid" role="alert">
+                Enter Valid First_Name!
+            </div>
+
+            <label>Last_Name </label>
+            <input class="form-control" id="field2" type="text" placeholder="LAST NAME" name="f_name">
+            <div id="lname" class="alert alert-danger invalid" role="alert">
+                Enter Valid Last_Name!
+            </div>
+
+            <label>Mobile No. </label>
+            <input class="form-control" id="field3" type="text" placeholder="Mobile No." name="Mob_no">
+            <div id="mobile" class="alert alert-danger invalid" role="alert">
+                Mobile No. should be of 10 Digits.
+            </div>
+
+
+            <label>Admission_No. </label>
+            <input class="form-control" id="field4" type="text" placeholder="Admission_No. " name="Adm_no">
+            <div id="adm" class="alert alert-danger invalid" role="alert">
+                Admission_No. Should be of 9 Characters.
+            </div>
+
+
+            <label>University RollNo. </label>
+            <input class="form-control " id="field5" type="text" placeholder="University RollNo." name="University_no">
+            <div id="uni" class="alert alert-danger invalid" role="alert">
+                University RollNo. Should be of 12 Digits.
+            </div>
+
+
+            <label>Intermediate RollNo. </label>
+            <input class="form-control" id="field6" type="text" placeholder="Intermediate RollNo." name="12_RollNo">
+            <div id="12" class="alert alert-danger invalid" role="alert">
+                Intermediate RollNo. Should be of 8 Digits.
+            </div>
+
+
+            <label>High School RollNo. </label>
+            <input class="form-control" id="field7" type="text" placeholder="High School RollNo." name="10_Roll.No">
+            <div id="10" class="alert alert-danger invalid" role="alert">
+                High School RollNo. Should be of 7 Digits.
+            </div>
+
+            <label>Semester </label>
+            <select class="form-control" id="field8">
+                <option>I</option>
+                <option>II</option>
+                <option>III</option>
+                <option>IV</option>
+                <option>V</option>
+                <option>VI</option>
+                <option>VII</option>
+                <option>VIII</option>
+              </select>
+
+
+            <label>Year </label>
+            <select class="form-control" id="field9">
+                <option>I</option>
+                <option>II</option>
+                <option>III</option>
+                <option>IV</option>
+              </select>
+            <br />
+        </form>
+        <button id="btn" class="btn btn-primary btn-lg btn-block " type="submit" name="button">SUBMIT</button>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script charset="utf-8" src="Student.js"></script>
+
+</html>
